@@ -1,0 +1,17 @@
+{
+  "product": [
+    { "id": 1, "title": "Nike Suit","Piece": "600", "image": "http://localhost:3000/1.png" },
+    { "id": 2, "title": "Nike Suit","Piece": "600", "image": "http://localhost:3000/2.png" },
+    { "id": 3, "title": "Nike Suit","Piece": "600", "image": "http://localhost:3000/3.png" },
+    { "id": 4, "title": "Nike Suit","Piece": "600", "image": "http://localhost:3000/4.png" },
+    { "id": 5, "title": "Nike Suit","Piece": "600", "image": "http://localhost:3000/5.png" },
+    { "id": 6, "title": "Hoodie","Piece": "450", "image": "http://localhost:3000/6.png" },
+    { "id": 7, "title": "Half-zipper suit", "Piece": "650", "image": "http://localhost:3000/7.png" },
+    { "id": 8, "title": "Half-zipper suit", "Piece": "650", "image": "http://localhost:3000/8.png" },
+    { "id": 9, "title": "Half-zipper suit", "Piece": "650", "image": "http://localhost:3000/9.png" },
+    { "id": 10, "title": "Half-zipper suit", "Piece": "650", "image": "http://localhost:3000/10.png" },
+    { "id": 11, "title": "Half-zipper suit", "Piece": "650", "image": "http://localhost:3000/11.png" },
+    { "id": 12, "title": "Half-zipper", "Piece": "450",  "image": "http://localhost:3000/12.png" }
+   
+  ]
+}
