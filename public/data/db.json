@@ -13,5 +13,6 @@
     { "id": 11, "title": "Half-zipper suit", "Piece": "650", "image": "http://localhost:3000/11.png" },
     { "id": 12, "title": "Half-zipper", "Piece": "450",  "image": "http://localhost:3000/12.png" }
    
-  ]
+  ],
+  "cats" : []
 }
