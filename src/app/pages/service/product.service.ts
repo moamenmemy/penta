@@ -10,6 +10,6 @@ export class ProductService {
   _httpClient=inject(HttpClient)
 
  getAllProducts():Observable<Product[]>{
-  return this._httpClient.get<Product[]>('/assets/data/product.json')
+  return this._httpClient.get<Product[]>('/data/product.json')
  }
 }
