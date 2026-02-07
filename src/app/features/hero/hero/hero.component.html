@@ -4,56 +4,48 @@
   <div class="absolute inset-0 bg-black/50"></div>
 
   <!-- محتوى -->
-  <div class="relative container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-    <div class="flex flex-col gap-6">
+  <div class="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- الصورة فوق النص في الموبايل -->
+    <div class="flex justify-center order-1 md:order-2">
+      <div class="relative w-[350px] h-[350px] md:w-[600px] md:h-[600px] rounded-full overflow-hidden">
+        <!-- الصورة -->
+        <div class="absolute inset-0 z-30 bg-[url('/logo.png')] bg-center bg-cover"></div>
+        <!-- طبقة شفافة أغمق -->
+        <div class="absolute inset-0 bg-white/30"></div>
+      </div>
+    </div>
+
+    <!-- النص -->
+    <div class="flex flex-col gap-6 order-2 md:order-1">
       <h1 class="text-4xl md:text-6xl font-bold text-white">
         مرحبًا بكم في <span class="text-[#ff6f61]">PENTA</span>
       </h1>
-      <P class="text-white font-semibold text-2xl">
-خمسة عقول، خمس حواس، ورؤية واحدة لا تتجزأ. 
-في <span class="text-[#ff6f61]">PENTA</span>، لم نختر الرقم عشوائياً؛ بل جعلناه دستورنا. نحن 5 شركاء اتحدنا في عام 2026 لنعيد صياغة مفهوم الكاجوال، حيث يلتقي التصميم الجريء بالدقة المتناهية.
-كل قطعة ننتجها هي خلاصة توازن بين خمس وجهات نظر مختلفة، اجتمعت لتمنحك مظهراً يتحدث عنك قبل أن تتحدث. نحن لا نبيع مجرد ملابس، نحن نصدر طاقة الخمسة في كل خيط.
-      </P>
+      <p class="text-white font-semibold text-2xl">
+        خمسة عقول، خمس حواس، ورؤية واحدة لا تتجزأ. 
+        في <span class="text-[#ff6f61]">PENTA</span>، لم نختر الرقم عشوائياً؛ بل جعلناه دستورنا. نحن 5 شركاء اتحدنا في عام 2026 لنعيد صياغة مفهوم الكاجوال، حيث يلتقي التصميم الجريء بالدقة المتناهية.
+        كل قطعة ننتجها هي خلاصة توازن بين خمس وجهات نظر مختلفة، اجتمعت لتمنحك مظهراً يتحدث عنك قبل أن تتحدث. نحن لا نبيع مجرد ملابس، نحن نصدر طاقة الخمسة في كل خيط.
+      </p>
       <span class="text-white font-bold text-4xl">PENTA 2025 | 5 Minds, 1 Vision</span>
 
+      <div class="flex gap-4 mt-6">
+        <!-- زر يروح لمكون "تواصل معنا" -->
+        <a 
+          [routerLink]="['/contact']"
+          class="px-6 cursor-pointer py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition"
+        >
+          تواصل معنا
+        </a>
 
-     <div class="flex gap-4 mt-6">
-  <!-- زر يروح لمكون "تواصل معنا" -->
-  <a 
-    [routerLink]="['/contact']"
-    class="px-6 cursor-pointer py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition"
-  >
-    تواصل معنا
-  </a>
-
-  <!-- زر يروح لمكون "المنتجات" -->
-  <a 
-    [routerLink]="['/products']"
-    class="px-6 py-3 cursor-pointer bg-gray-800 text-white rounded-full hover:bg-gray-900 transition"
-  >
-    المنتجات
-  </a>
-</div>
-
-
+        <!-- زر يروح لمكون "المنتجات" -->
+        <a 
+          [routerLink]="['/products']"
+          class="px-6 py-3 cursor-pointer bg-gray-800 text-white rounded-full hover:bg-gray-900 transition"
+        >
+          المنتجات
+        </a>
+      </div>
     </div>
-
-
-
-    <!-- img -->
- <div class="flex justify-center">
-  <div class="relative w-[350px] h-[350px] md:w-[600px] md:h-[600px] rounded-full overflow-hidden">
-
-    <!-- الصورة -->
-    <div class="absolute inset-0  z-30
-                bg-[url('/logo.png')] bg-center bg-cover">
-    </div>
-
-    <!-- طبقة شفافة أغمق فوق الصورة -->
-    <div class="absolute inset-0 bg-white/30"></div>
-
-  </div>
-</div>
 
   </div>
 </section>
