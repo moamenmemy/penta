@@ -1,15 +1,15 @@
-import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Product } from '../interface/product';
+import productData from '../product.json';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  _httpClient=inject(HttpClient)
-
- getAllProducts():Observable<Product[]>{
-  return this._httpClient.get<Product[]>('/data/product.json')
- }
+  // Return embedded JSON to avoid server-side HTTP call during prerender
+  getAllProducts(): Observable<Product[]> {
+    return of(productData as Product[]);
+  }
 }
